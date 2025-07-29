@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet } from '@angular/router'; 
+import { AppointmentListComponentComponent } from './appointment-list-component/appointment-list-component.component';
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, AppointmentListComponentComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
